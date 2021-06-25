@@ -5,11 +5,17 @@ using UnityEngine;
 public class FirtsComponent : MonoBehaviour
 {
 
-    public float rotationSeed = 60;
+    public float rotationSeed ;
 
     public bool reverse;
 
     public Vector3 rotationAxis;
+
+    public string myString;
+
+    public char[] myArray;
+
+    public List<int> myList;
 
     private void Start()
     {
@@ -37,7 +43,7 @@ public class FirtsComponent : MonoBehaviour
         //}
         //else
         //{
-        //    transform.Rotate(rotationAxis*rotation = Time.deltaTime, 0, Space.World);
+            transform.Rotate(rotation*rotationAxis, Space.World );
 
         //}
 
